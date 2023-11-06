@@ -10,3 +10,9 @@ function university_files(){
 
 //This loads all the scripts and style files by the name of 2nd args which is a callback function
 add_action('wp_enqueue_scripts', 'university_files');
+
+function university_features (){
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'university_features');
